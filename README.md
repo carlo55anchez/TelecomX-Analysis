@@ -21,6 +21,7 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
   - `07_estandarizacion_datos.ipynb`: Estandarización de variables.
   - `08_analisis_evasion.ipynb`: Distribución de `Evasión`.
   - `09_analisis_evasion_categoricas.ipynb`: Evasión por variables categóricas.
+  - `10_analisis_evasion_numericas.ipynb`: Evasión por variables numéricas.
 - **img/**:
   - `churn_count.png`: Conteo de `Evasión`.
   - `churn_pie.png`: Proporción de `Evasión`.
@@ -29,6 +30,14 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
   - `evasion_por_metodo_pago.png`: Evasión por método de pago.
   - `evasion_por_servicio_internet.png`: Evasión por servicio de internet.
   - `evasion_por_facturacion.png`: Evasión por facturación sin papel.
+  - `evasion_antiguedad_hist.png`: Histograma de antigüedad por evasión.
+  - `evasion_antiguedad_box.png`: Boxplot de antigüedad por evasión.
+  - `evasion_cargos_mensuales_hist.png`: Histograma de cargos mensuales por evasión.
+  - `evasion_cargos_mensuales_box.png`: Boxplot de cargos mensuales por evasión.
+  - `evasion_cargos_totales_hist.png`: Histograma de cargos totales por evasión.
+  - `evasion_cargos_totales_box.png`: Boxplot de cargos totales por evasión.
+  - `evasion_cargos_diarios_hist.png`: Histograma de cargos diarios por evasión.
+  - `evasion_cargos_diarios_box.png`: Boxplot de cargos diarios por evasión.
 - **scripts/**: Scripts reutilizables (pendiente).
 - **visualizations/**: Visualizaciones interactivas (pendiente).
 - **README.md**: Descripción del proyecto.
@@ -63,6 +72,19 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
       ![Evasión por Servicio de Internet](img/evasion_por_servicio_internet.png)
     - **Facturación Sin Papel**:
       ![Evasión por Facturación](img/evasion_por_facturacion.png)
+  - Evasión por numéricas:
+    - **Antigüedad**:
+      ![Histograma de Antigüedad](img/evasion_antiguedad_hist.png)
+      ![Boxplot de Antigüedad](img/evasion_antiguedad_box.png)
+    - **Cargos Mensuales**:
+      ![Histograma de Cargos Mensuales](img/evasion_cargos_mensuales_hist.png)
+      ![Boxplot de Cargos Mensuales](img/evasion_cargos_mensuales_box.png)
+    - **Cargos Totales**:
+      ![Histograma de Cargos Totales](img/evasion_cargos_totales_hist.png)
+      ![Boxplot de Cargos Totales](img/evasion_cargos_totales_box.png)
+    - **Cargos Diarios**:
+      ![Histograma de Cargos Diarios](img/evasion_cargos_diarios_hist.png)
+      ![Boxplot de Cargos Diarios](img/evasion_cargos_diarios_box.png)
 
 ## Dependencias
 - Python 3.8+
