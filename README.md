@@ -23,6 +23,7 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
   - `09_analisis_evasion_categoricas.ipynb`: Evasión por variables categóricas.
   - `10_analisis_evasion_numericas.ipynb`: Evasión por variables numéricas.
   - `11_analisis_correlaciones.ipynb`: Análisis de correlaciones.
+  - `12_informe_final.ipynb`: Informe final del análisis.
 - **img/**:
   - `churn_count.png`: Conteo de `Evasión`.
   - `churn_pie.png`: Proporción de `Evasión`.
@@ -96,6 +97,9 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
       ![Dispersión de Cargos Diarios](img/dispersion_cargos_diarios.png)
     - **Total de Servicios**:
       ![Dispersión de Total de Servicios](img/dispersion_total_servicios.png)
+- **Informe Final**:
+  - Resumen de todo el análisis con conclusiones y recomendaciones:
+    [Informe Final](notebooks/12_informe_final.ipynb)
 
 ## Dependencias
 - Python 3.8+
