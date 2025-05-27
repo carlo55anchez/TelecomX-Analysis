@@ -22,6 +22,7 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
   - `08_analisis_evasion.ipynb`: Distribución de `Evasión`.
   - `09_analisis_evasion_categoricas.ipynb`: Evasión por variables categóricas.
   - `10_analisis_evasion_numericas.ipynb`: Evasión por variables numéricas.
+  - `11_analisis_correlaciones.ipynb`: Análisis de correlaciones.
 - **img/**:
   - `churn_count.png`: Conteo de `Evasión`.
   - `churn_pie.png`: Proporción de `Evasión`.
@@ -38,6 +39,9 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
   - `evasion_cargos_totales_box.png`: Boxplot de cargos totales por evasión.
   - `evasion_cargos_diarios_hist.png`: Histograma de cargos diarios por evasión.
   - `evasion_cargos_diarios_box.png`: Boxplot de cargos diarios por evasión.
+  - `correlacion_heatmap.png`: Matriz de correlación de variables.
+  - `dispersion_cargos_diarios.png`: Dispersión de cargos diarios vs. evasión.
+  - `dispersion_total_servicios.png`: Dispersión de total de servicios vs. evasión.
 - **scripts/**: Scripts reutilizables (pendiente).
 - **visualizations/**: Visualizaciones interactivas (pendiente).
 - **README.md**: Descripción del proyecto.
@@ -85,6 +89,13 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
     - **Cargos Diarios**:
       ![Histograma de Cargos Diarios](img/evasion_cargos_diarios_hist.png)
       ![Boxplot de Cargos Diarios](img/evasion_cargos_diarios_box.png)
+  - Correlaciones:
+    - **Matriz de Correlación**:
+      ![Matriz de Correlación](img/correlacion_heatmap.png)
+    - **Cargos Diarios**:
+      ![Dispersión de Cargos Diarios](img/dispersion_cargos_diarios.png)
+    - **Total de Servicios**:
+      ![Dispersión de Total de Servicios](img/dispersion_total_servicios.png)
 
 ## Dependencias
 - Python 3.8+
