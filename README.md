@@ -13,7 +13,7 @@ Este proyecto tiene como objetivo analizar los datos de clientes de Telecom X pa
 - **requirements.txt**: Dependencias necesarias para ejecutar el proyecto.
 
 ## Instrucciones para ejecutar el notebook
-1. Clona el repositorio: `git clone https://github.com/<tu-usuario>/TelecomX-Analysis.git`
+1. Clona el repositorio: `git clone https://github.com/carlo55anchez/TelecomX-Analysis.git`
 2. Instala las dependencias: `pip install -r requirements.txt`
 3. Abre Google Colab y carga el notebook desde la carpeta `notebooks/`.
 4. Asegúrate de tener acceso al archivo `TelecomX_Data.json` en la carpeta `data/`.
