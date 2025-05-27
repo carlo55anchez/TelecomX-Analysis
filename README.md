@@ -6,11 +6,13 @@ Este proyecto tiene como objetivo analizar los datos de clientes de Telecom X pa
 ## Estructura del proyecto
 - **data/**: 
   - `TelecomX_Data.json`: Datos originales en formato JSON.
-  - `TelecomX_Data_clean.csv`: Dataset limpio tras desanidar y corregir inconsistencias.
+  - `TelecomX_Data_clean.csv`: Dataset limpio tras desanidar columnas JSON.
+  - `TelecomX_Data_corrected.csv`: Dataset corregido tras solucionar inconsistencias.
 - **notebooks/**: 
   - `01_carga_datos.ipynb`: Carga inicial de datos desde la API y conversión a DataFrame.
   - `02_exploracion_datos.ipynb`: Exploración inicial de columnas, tipos de datos y estadísticas descriptivas.
-  - `03_limpieza_datos.ipynb`: Limpieza de datos, incluyendo desanidado de columnas JSON, corrección de inconsistencias y guardado del dataset limpio.
+  - `03_limpieza_datos.ipynb`: Limpieza de datos, incluyendo desanidado de columnas JSON y guardado del dataset limpio.
+  - `04_correccion_datos.ipynb`: Corrección de valores vacíos en `Churn` y problemas de tipo en `account_Charges.Total`, con verificación de coherencia.
 - **img/**: Imágenes generadas a partir de las visualizaciones (pendiente).
 - **scripts/**: Scripts reutilizables en Python para tareas específicas (pendiente).
 - **visualizations/**: Visualizaciones exportadas (pendiente).
@@ -21,12 +23,13 @@ Este proyecto tiene como objetivo analizar los datos de clientes de Telecom X pa
 1. Clona el repositorio: `git clone https://github.com/<tu-usuario>/TelecomX-Analysis.git`
 2. Instala las dependencias: `pip install -r requirements.txt`
 3. Abre Google Colab y carga los notebooks desde la carpeta `notebooks/`.
-4. Asegúrate de tener acceso al archivo `TelecomX_Data.json` o `TelecomX_Data_clean.csv` en la carpeta `data/` o usa la URL directa.
+4. Asegúrate de tener acceso al archivo `TelecomX_Data.json` o `TelecomX_Data_corrected.csv` en la carpeta `data/` o usa la URL directa.
 5. Ejecuta las celdas del notebook en orden.
 
 ## Gráficos e insights
-- **Exploración inicial**: Se identificaron 6 columnas, incluyendo `Churn` (variable objetivo) y columnas anidadas (`customer`, `phone`, `internet`, `account`). La columna `Churn` tiene 3 valores únicos, lo que sugiere una posible inconsistencia a corregir.
-- **Limpieza de datos**: Se desanidaron las columnas JSON para obtener variables individuales (por ejemplo, género, tipo de servicio, contrato). No se encontraron valores nulos ni duplicados. Se corrigieron posibles inconsistencias en `Churn` y se guardó el dataset limpio como `TelecomX_Data_clean.csv`.
+- **Exploración inicial**: Se identificaron 6 columnas, incluyendo `Churn` (variable objetivo) y columnas anidadas (`customer`, `phone`, `internet`, `account`). La columna `Churn` tenía 3 valores únicos, incluyendo un valor vacío.
+- **Limpieza de datos**: Se desanidaron las columnas JSON, obteniendo 21 variables (por ejemplo, `customer_gender`, `internet_InternetService`, `account_Charges.Monthly`). No se encontraron valores nulos ni duplicados.
+- **Corrección de datos**: Se corrigieron 224 valores vacíos en `Churn`, reemplazándolos por 'No'. Se solucionó un problema de tipo en `account_Charges.Total`, convirtiéndolo a `float64`. Se verificó la coherencia de variables categóricas y numéricas.
 
 ## Dependencias
 - Python 3.8+
