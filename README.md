@@ -49,7 +49,7 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
 - **requirements.txt**: Dependencias.
 
 ## Instrucciones para ejecutar
-1. Clona el repositorio: `git clone https://github.com/<tu-usuario>/TelecomX-Analysis.git`
+1. Clona el repositorio: `git clone https://github.com/carlo55anchez/TelecomX-Analysis.git`
 2. Instala las dependencias: `pip install -r requirements.txt`
 3. Abre Google Colab y carga los notebooks desde `notebooks/`.
 4. Usa `TelecomX_Data.json` o `TelecomX_Data_standardized.csv` desde `data/` o la URL directa.
