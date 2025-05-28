@@ -43,8 +43,6 @@ Este proyecto analiza los datos de clientes de Telecom X para identificar factor
   - `correlacion_heatmap.png`: Matriz de correlación de variables.
   - `dispersion_cargos_diarios.png`: Dispersión de cargos diarios vs. evasión.
   - `dispersion_total_servicios.png`: Dispersión de total de servicios vs. evasión.
-- **scripts/**: Scripts reutilizables (pendiente).
-- **visualizations/**: Visualizaciones interactivas (pendiente).
 - **README.md**: Descripción del proyecto.
 - **requirements.txt**: Dependencias.
 
